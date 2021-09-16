@@ -11,8 +11,9 @@ int main()
 {
     int N;
     int i;
+    char c;
     while (1) {
-        scanf("%d", &N);
+        scanf("%d%c", &N); // scan the \n char. otherwise the fgets below will get a blank line
         if (N == 0) {
             break;
         }
